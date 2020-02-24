@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/BasKalkman.github.io",
   siteMetadata: {
     title: `Bas`,
     description: `Portfolio voor Bas`,
