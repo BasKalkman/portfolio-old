@@ -1,0 +1,29 @@
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+
+  & > *:not(:last-child) {
+    margin-right: 2rem;
+  }
+  @media only screen and (max-width: 580px) {
+    flex-direction: column-reverse;
+
+    & > *:not(:last-child) {
+      margin-right: unset;
+    }
+  }
+}
+
+.about__image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid $color-black;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+}

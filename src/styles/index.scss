@@ -1,0 +1,57 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Arvo:400,700");
+
+// Variables
+@import "./variables";
+
+// Base reset
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $color-white;
+  font-family: $font-text;
+  line-height: 1.4;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+// Utility
+.heading {
+  font-family: $font-heading;
+}
+
+// Components
+@import "./components/header";
+@import "./components/about";
+@import "./components/projects";
+@import "./components/experience";
+@import "./logos";
+@import "./components/footer";

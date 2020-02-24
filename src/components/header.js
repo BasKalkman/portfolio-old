@@ -1,42 +1,39 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React, { Component } from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+export default class Header extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      scrollDepth: 0,
+    }
+  }
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+  watchScroll() {
+    this.setState({
+      scrollDepth: window.pageYOffset,
+    })
+  }
+
+  componentDidMount() {
+    this.scrollWatcher = window.addEventListener(
+      "scroll",
+      this.watchScroll.bind(this)
+    )
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener(this.scrollWatcher)
+  }
+
+  render() {
+    return (
+      <div className="header">
+        <h1 className="header__title">
+          Bas<span className="header__dot">.</span>
+        </h1>
+
+        {this.state.scrollDepth < 10 && <div className="header__scroll"></div>}
+      </div>
+    )
+  }
 }
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
