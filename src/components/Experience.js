@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import ExperienceButton from "./ExperienceButton"
-import { Helmet } from "react-helmet"
 
 const items = [
   {
@@ -63,12 +62,6 @@ export default class Experience extends Component {
       <div className="section-experience">
         <h2 className="heading">Experience</h2>
         <div className="experience">
-          <Helmet>
-            <link
-              rel="stylesheet"
-              href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css"
-            />
-          </Helmet>
           {items.map(e => (
             <ExperienceButton item={e} />
           ))}
