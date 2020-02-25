@@ -81,8 +81,8 @@ export default class Projects extends Component {
       <div className="section-projects">
         <h2 className="projects__heading">Projects</h2>
         <div className="projects">
-          {projects.map(e => {
-            return <ProjectCard project={e} />
+          {projects.map((e, i) => {
+            return <ProjectCard project={e} key={i.toString()} />
           })}
         </div>
       </div>

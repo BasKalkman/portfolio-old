@@ -17,9 +17,13 @@ export default function ProjectCard(props) {
         <h3 className="heading">{name}</h3>
         <div className="project-card__content">{text}</div>
         <div className="project-card__links">
-          {links.map(e => {
+          {links.map((e, i) => {
             return (
-              <a href={e.href} className="project-card__link">
+              <a
+                href={e.href}
+                className="project-card__link"
+                key={i.toString()}
+              >
                 {e.text}
               </a>
             )

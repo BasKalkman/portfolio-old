@@ -69,8 +69,8 @@ export default class Experience extends Component {
               href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css"
             />
           </Helmet>
-          {items.map(e => (
-            <ExperienceButton item={e} />
+          {items.map((e, i) => (
+            <ExperienceButton item={e} key={i.toString()} />
           ))}
         </div>
       </div>
