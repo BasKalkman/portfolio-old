@@ -1,6 +1,7 @@
 import React from "react"
 import "../styles/index.scss"
 import "@fortawesome/fontawesome-free/css/all.css"
+
 import Header from "../components/Header"
 import About from "../components/About"
 import Footer from "../components/Footer"
