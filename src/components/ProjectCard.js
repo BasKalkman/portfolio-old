@@ -1,13 +1,8 @@
 import React from "react"
 
 export default function ProjectCard(props) {
-  /*
-    props: image, title, content, links
-    */
-
   const { image, name, text, links } = props.project
 
-  // TODO: Fix links to demos
   return (
     <div className="project-card">
       <div className="project-card__image-box">
