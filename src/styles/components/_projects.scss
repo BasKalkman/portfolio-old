@@ -12,6 +12,7 @@
 
   @media only screen and (max-width: 750px) {
     clip-path: polygon(0 0, 50% 1.5%, 100% 0, 100% 98.5%, 50% 100%, 0 98.5%);
+    padding: 8rem 1rem;
   }
 }
 
@@ -46,6 +47,10 @@
   position: relative;
   margin-bottom: 2.5rem;
   margin-right: 1.4rem;
+
+  @media only screen and (max-width: 750px) {
+    margin-right: unset;
+  }
 
   &:hover {
     transform: scale(1.03);

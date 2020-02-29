@@ -8,8 +8,8 @@ export default function About() {
         <h2 className="heading">About Me</h2>
         <p>
           The first website I ever built, at 12 years old, was of course on
-          Geocities. The efforts were thoroughly enjoyable and, though fairly
-          embarrassing, tied up the phoneline something fierce.
+          Geocities. The efforts were thoroughly enjoyable, though fairly
+          embarrassing, and tied up the phoneline something fierce.
         </p>
         <p>
           A lot has changed since then and I've dived back into web development.
