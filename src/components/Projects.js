@@ -22,6 +22,13 @@ const projects = [
     links: [{ text: "Demo", href: "/trillo" }],
   },
   {
+    name: "Customer portal",
+    image: "mijnps-small.jpg",
+    text:
+      "Customer portal for matchmakinging agency. Customer can manage their own profile and respond to message and introductions. Built with VueJS",
+    links: [],
+  },
+  {
     name: "Color Guesser",
     image: "color-guesser-small.jpg",
     text:
@@ -45,7 +52,7 @@ const projects = [
     name: "Memory",
     image: "memory-small.jpg",
     text:
-      "A small, though very difficult, game of memory. Started just to practice the card flip effect, but grew into a full game of memory.",
+      "A small, though very difficult, game of memory. Started just to practice the card flip effect, but grew into a bit more.",
     links: [
       { text: "Demo", href: "/memory" },
       { text: "Github", href: "https://github.com/BasKalkman/Memory" },
@@ -54,24 +61,18 @@ const projects = [
   {
     name: "Natours",
     image: "natours-small.jpg",
-    text: "Created as part of an SCSS course. ",
+    text:
+      "Fictional outdoors adventure site. Created as part of an SCSS course.",
     links: [{ text: "Demo", href: "/natours" }],
   },
   {
-    name: "Rally matching",
+    name: "Rally seating",
     image: "rally-small.jpg",
     text:
-      "Automatically create seating arrangements for a rally. Built with Bootstrap, MongoDB and NodeJS",
+      "Automatically create seating arrangements for a rally. Built with Bootstrap, MongoDB and NodeJS. Has since been rebuilt elsewhere to work completely offline.",
     links: [
       { text: "GitHub", href: "https://github.com/BasKalkman/rallylijst" },
     ],
-  },
-  {
-    name: "Customer portal",
-    image: "mijnps-small.jpg",
-    text:
-      "Customer portal for matching agency. Customer can manage their own profile and respond to message and introductions. Built with VueJS",
-    links: [],
   },
 ]
 
